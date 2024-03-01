@@ -1,0 +1,70 @@
+const NewsData = {
+    "result": [
+        { 
+            "id": "1",
+            "logo": "./images/icons/catalog/logo.svg", 
+            "title": "ResumeMaker",
+            "description": "Capture your ideas & craft texts with AIs touch",
+            "category": "Performance Management",
+            "pricetags": ["From $9.99"],
+            "tags": ["Recruiting"] },
+        { 
+            "id": "2",
+            "logo": "./images/icons/catalog/logo2.svg",
+            "title": "Prompty AI",
+            "description": "No-code platform for Generative AI Apps and Workflows",
+            "category": "Workspace Planning",
+            "pricetags": ["From $29.99"],
+            "tags": ["GPT","Recruiting"] },
+        { 
+            "id": "3",
+            "logo": "./images/icons/catalog/logo3.svg",
+            "title": "VEED GPT 2.0",
+            "description": "The best way to create pro-level videos using only text.",
+            "category": "Total Rewards",
+            "pricetags": ["From $49.99"],
+            "tags": ["Career"] },
+        { 
+            "id": "4",
+            "logo": "./images/icons/catalog/logo.svg", 
+            "title": "Prompty AI",
+            "description": "No-code platform for Generative AI Apps and Workflows",
+            "category": "HR Operation",
+            "pricetags": ["From $4.99"],
+            "tags": ["Hiring"] },
+        { 
+            "id": "5",
+            "logo": "./images/icons/catalog/logo.svg", 
+            "title": "ResumeMaker",
+            "description": "Capture your ideas & craft texts with AIs touch",
+            "category": "Employee Engagement",
+            "pricetags": ["From $9.99"],
+            "tags": ["Recruiting", "Hiring"] },
+        { 
+            "id": "6",
+            "logo": "./images/icons/catalog/logo2.svg",
+            "title": "Prompty AI",
+            "description": "No-code platform for Generative AI Apps and Workflows",
+            "category": "Workspace Planning",
+            "pricetags": ["From $29.99"],
+            "tags": ["GPT","Recruiting"] },
+        { 
+            "id": "7",
+            "logo": "./images/icons/catalog/logo3.svg",
+            "title": "VEED GPT 2.0",
+            "description": "The best way to create pro-level videos using only text.",
+            "category": "Total Rewards",
+            "pricetags": ["From $49.99"],
+            "tags": ["Career"] },
+        { 
+            "id": "8",
+            "logo": "./images/icons/catalog/logo.svg", 
+            "title": "Prompty AI",
+            "description": "No-code platform for Generative AI Apps and Workflows",
+            "category": "HR Operation",
+            "pricetags": ["From $4.99"],
+            "tags": ["Hiring", "Career"] },
+      ];
+}
+
+export default NewsData;

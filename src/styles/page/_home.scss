@@ -1,0 +1,345 @@
+.home {
+  width: 100vw;
+  height: 100vh;
+
+  &:after{
+    display: block;
+    content: '.';
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.47522759103641454) 40%, rgba(0,0,0,1) 89%);
+    height: 300px;
+    width: 100vw;
+    bottom:0;
+    position: fixed;
+    @media only screen and (max-width: $small) {
+      display: none;
+    }
+  }
+
+  //overflow: hidden;
+  &.page-wrapper{
+    background:transparent;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+    z-index: 10;
+    @media only screen and (max-width: $small) {
+      position: relative;
+    }
+  }
+
+  @media only screen and (max-width: $small) {
+    .btn-brown {
+      max-height: 36px;
+    }
+    .btn-big {
+      max-height: 58px;
+    }
+  }
+
+  footer {
+    position: absolute;
+    top: 588vh;
+    z-index: 1;
+    left: 0;
+    @media only screen and (max-width: $small) {
+      position: relative;
+    }
+  }
+
+  .highlights.block-wide {
+    width: 100%;
+    background: url('../../../public/images/home/features/wide-block-background.svg') no-repeat;
+    background-size: 100% auto; /* width and height, can be %, px or whatever. */
+    min-height: 438px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    padding-bottom: 68px;
+    border-radius: 8px;
+    @media only screen and (max-width: $small) {
+      padding: 1rem;
+      background-size: cover; /* width and height, can be %, px or whatever. */
+      background-position: center; /* width and height, can be %, px or whatever. */
+
+    }
+
+    h2 {
+      font-size: 48px;
+      font-weight: 600;
+      text-transform: none;
+      max-width: 1048px;
+      margin-bottom: 24px;
+      @media only screen and (max-width: $small) {
+        font-size: 32px;
+        line-height: 39px;
+      }
+    }
+
+    p {
+      max-width: 917px;
+      line-height: 26px;
+      font-size: 16px;
+      margin-bottom: 44px;
+    }
+  }
+
+}
+
+h1 {
+  text-align: center;
+}
+
+.sections {
+  //display: flex;
+  flex-direction: column;
+  width: 100%;
+  //height: 600vh;
+  height: 100vh;
+  //overflow: hidden;
+  scroll-snap-type: y mandatory;
+
+}
+.highlights{
+  img{
+    cursor:pointer;
+  }
+}
+
+.section:nth-child(2n+1) {
+  //background: rgba(255, 255, 255, 0.1)
+}
+
+.section {
+  padding: 0 1rem;
+  //background-color: $black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  //width: 100%;
+  //height: 100vh;
+  scroll-snap-align: start;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  //transform: scaleY(0);
+  transition: ease-in-out 0.3s;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  @media only screen and (max-width: $small) {
+    height: auto;
+    margin: 3rem 0;
+
+  }
+}
+
+.section-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#section-1 {
+  @media only screen and (max-width: $small) {
+    h1 {
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 600;
+    }
+  }
+}
+
+
+#section-2 {
+  h2 {
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-transform: none;
+    padding: 0 1rem;
+    max-width: 888px;
+  }
+
+  p {
+    font-size: 24px;
+    line-height: 39px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  .brand-logos {
+    display: grid;
+    margin-top: 4rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    max-width: 888px;
+
+    img {
+      width: auto;
+    }
+  }
+
+  @media only screen and (max-width: $small) {
+    .brand-logos {
+      display: flex;
+      flex-flow: wrap;
+      align-content: center;
+      justify-content: center;
+      img {
+        width:100%;
+        max-width: 33%;
+      }
+    }
+    h2 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 32px;
+    }
+  }
+}
+
+#section-3 {
+  .highlights {
+    width: 1068px;
+    height: 374px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    img:nth-child(2) {
+      align-self: flex-end;
+    }
+  }
+
+  @media only screen and (max-width: $small) {
+    margin-bottom: -3rem;
+    .highlights {
+      width: auto;
+      height: auto;
+      display: block;
+
+      img {
+        margin-bottom: 1.5rem;
+        max-width: 232px
+      }
+    }
+  }
+}
+
+#section-4 {
+  .highlights {
+    width: 685px;
+    height: 374px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  img:nth-child(1) {
+    align-self: flex-end;
+  }
+
+  @media only screen and (max-width: $small) {
+    .highlights {
+      display: block;
+      width: auto;
+      height: auto;
+      img {
+        margin-bottom: 1.5rem;
+        max-width: 232px
+      }
+    }
+  }
+}
+
+#section-5 {
+  div {
+    max-width: 540px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  @media only screen and (max-width: $small) {
+    p {
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    .btn {
+      display: inline-block;
+    }
+  }
+}
+
+#section-6 {
+
+  @media only screen and (max-width: $small) {
+    footer {
+      margin-top: 2rem;
+    }
+  }
+}
+
+.highlighted {
+  color: $brown;
+}
+
+.section.active {
+  //transform: scaleY(1);
+  z-index: 1;
+  transform: translate(0, 0);
+}
+
+/* Video styles */
+#background-video {
+  position: fixed;
+  display: block;
+  margin: auto;
+  background: black;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  //object-fit: cover;
+  @media only screen and (max-width: $small) {
+    object-fit: contain;
+
+  }
+  z-index: -1; /* Ensure the video is behind your content */
+}

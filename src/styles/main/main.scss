@@ -1,0 +1,19 @@
+// === Base
+@import "./../base/reset";
+@import "./../base/vars";
+@import "./../base/base";
+
+// === Page
+@import "../page/home";
+
+// === Blocks
+@import "../blocks/header-catalog";
+@import "../blocks/header";
+@import "../blocks/static-pages";
+@import "../blocks/main-content";
+@import "../blocks/sidebar";
+@import "../blocks/pagination";
+@import "../blocks/footer";
+
+// === Elements
+@import "../elements/customSelect";

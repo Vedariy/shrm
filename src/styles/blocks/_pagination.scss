@@ -1,0 +1,106 @@
+.pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  @media only screen and (max-width: $small) {
+    flex-direction: column;
+    padding: 0;
+  }
+  &__main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    //max-width: 270px;
+    @media only screen and (max-width: $small) {
+      margin-bottom: 1rem;
+      max-width: 100%;
+
+    }
+    &-nav_prev,
+    &-nav_next {
+      //border: 1px solid $brown-light !important;
+      //border-radius: 8px;
+      button {
+        background-color: transparent;
+        border: 1px solid $brown-light !important;
+        border-radius: 8px;
+        color: $black;
+        cursor: pointer;
+        font-weight: 700;
+        position: relative;
+        height: 32px;
+        width: 32px;
+
+        span {
+          display: none;
+        }
+
+        &.active {
+          //background-color: $grey-light;
+          color: $brown;
+        }
+
+        &::before {
+          background: url("../../../public/images/icons/arrow.svg") no-repeat center;
+          background-size: cover;
+          content: "";
+          height: 10px;
+          width: 6px;
+          position: absolute;
+          left: calc(50% - 3px);
+          top: calc(50% - 5px);
+        }
+
+      }
+    }
+    &-nav_prev {
+      button {
+        &::before {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    button[disabled] {
+      cursor: default;
+
+      &::before {
+        opacity: 0.5;
+      }
+    }
+
+
+    &-nav-pages {
+      button {
+        color: $black;
+        cursor: pointer;
+        font-weight: 700;
+        position: relative;
+        height: 32px;
+        width: 32px;
+        border: none;
+        background: none;;
+        &.active {
+          //background-color: $grey-light;
+          color: $brown;
+          background: $grey-light;
+        }
+      }
+      span {
+        //cursor: default;
+      }
+    }
+
+
+  }
+
+  &__info {
+    //margin-top:1rem;
+    //width: 100%;
+  }
+
+}

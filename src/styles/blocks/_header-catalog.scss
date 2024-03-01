@@ -1,0 +1,26 @@
+.header-catalog{
+    background-color: $blue;
+    padding: 40px 10px 120px;
+    text-align: center;
+    width: 100%;
+    img{
+        margin: 0 auto 36px auto;
+    }
+    h3{
+        color: $white;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+}
+
+@media only screen and (max-width: $small){
+    .header-catalog{
+        padding: 25px 16px 10rem;
+        max-width: 100vh;
+        overflow-x: hidden;
+        h3{
+            line-height: 40px;
+            text-align: left;
+        }
+    }
+}

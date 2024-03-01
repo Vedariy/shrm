@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../../assets/ProximaNova/ProximaNova-Regular.eot');
+    src: url('../../assets/ProximaNova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../../assets/ProximaNova/ProximaNova-Regular.woff') format('woff'),
+    url('../../assets/ProximaNova/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+	font-style: normal;
+}
+
+body {
+    background-color: $grey-light;
+    font-family: 'Proxima Nova', sans-serif;
+    margin: 0;
+}
+
+// Titles
+h1{
+    font-size: 80px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+h2{
+    font-size: 48px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+h3{
+    font-size: 32px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+h4{
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+h5{
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 14px;
+}
+
+#root{
+    display: inline-block;
+    width: 100%;
+}
+
+.app-container{
+    min-width: 375px;
+}
+
+// Main Container
+.container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1240px;
+}
+
+// Button Brown
+.btn{
+    border-radius: 8px;
+    font-size: 12px;
+    transition: ease-in-out 0.2s;
+    min-height: 2rem;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    padding: 0 20px;
+}
+.btn-brown{
+    background-color: $brown;
+    border-radius: 8px;
+    color: $white;
+    font-size: 12px;
+    transition: ease-in-out 0.2s;
+    min-height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    white-space: nowrap;
+    padding: 0 20px;
+    border:0;
+
+    &:hover{
+        background-color: #CBAC7B;
+    }
+
+    &.pressed{
+        background-color: #CBAC7B;
+    }
+    &.disabled{
+        opacity: 0.5;
+    }
+}
+// Button White
+.btn-white{
+    background-color: $white;
+    border-radius: 8px;
+    color: $black-like;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+    font-family: Inter,sans-serif;
+    transition: ease-in-out 0.2s;
+    min-height: 54px;
+    display: flex;
+    min-width:216px;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    border:0;
+    //padding: 0 20px;
+    &:hover{
+        background-color: #CBAC7B;
+    }
+
+    &.pressed{
+        background-color: #CBAC7B;
+    }
+    &.disabled{
+        opacity: 0.5;
+    }
+}
+.btn-big{
+    height:58px;
+    min-width:183px;
+    font-size:16px;
+}
